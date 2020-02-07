@@ -1,0 +1,100 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+
+.fs-div {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
+.fs-div:hover {
+    opacity: 1;
+}
+
+.time,
+#bkk-container {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    margin: 0px 5%;
+    //overflow-y: scroll;
+}
+
+#clock {
+    font-family: 'Alata', sans-serif;
+    font-size: 6em;
+    text-align: center;
+}
+
+#date {
+    font-family: 'Alata', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+.ADFL-update::after {
+    content: " frissítve";
+}
+
+.ADFL-update {
+    text-align: right;
+    color: silver;
+}
+
+.ADFL-elem {
+    margin: 10px 0px;
+    background-color: #222222;
+    border-radius: 15px;
+}
+
+.stop-header {
+    font-family: 'Alata', sans-serif;
+    font-size: 1.5em;
+    padding: 10px 15px;
+}
+
+.stop-body {
+    padding: 0px 15px 10px 15px;
+}
+
+.dep-row {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.route-badge {
+    min-width: 48px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.headsign {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.dep-time {
+    background-color: #222222;
+    padding: 3px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    float: right;
+}
+
+.dep-time.pred {
+    color: greenyellow;
+}
+
+.dep-time.past {
+    color: white;
+    background-color: orangered;
+}
