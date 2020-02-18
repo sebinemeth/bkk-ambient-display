@@ -50,7 +50,10 @@ function updateTime(global) {
     var time = lz(dt.getHours(), 2) + ':' + lz(dt.getMinutes(), 2);
     if (global.config.showSecs)
         time += ':' + lz(dt.getSeconds(), 2);
-    var date = dt.getFullYear() + '.' + lz(dt.getMonth() + 1, 2) + '.' + lz(dt.getDate(), 2) + '.';
+    var months = ["január","február","március","április","május","június","július","augusztus","szeptember","október","november","december"]
+    var date = global.config.fullDate ?
+        dt.getFullYear() + '.' + lz(dt.getMonth() + 1, 2) + '.' + lz(dt.getDate(), 2) + '.':
+        months[dt.getMonth()] + " " + lz(dt.getDate(), 2) + '.';
     global.DOMs.clock.html(time);
     global.DOMs.date.html(date);
     setTimeout(function () {

@@ -1,0 +1,22 @@
+{
+    "name": "BKK Ambient Display",
+    "short_name": "BKK Ambient Display",
+    "icons": [{
+        "src": "img/bad-icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    },{
+        "src": "img/bad-icon-144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+    },{
+        "src": "img/bad-icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }],
+    "start_url": "index.php",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "orientation": "landscape"
+}

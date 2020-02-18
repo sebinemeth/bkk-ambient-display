@@ -34,8 +34,42 @@ body {
 
 #date {
     font-family: 'Alata', sans-serif;
-    font-size: 3em;
+    font-size: 2.2em;
     text-align: center;
+}
+
+#weather {
+    margin: 15px 0px;
+    background-color: #222222;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+#weather .info p::before {
+    content: url(img/information.svg);
+    display: inline-block;
+    height: 1.3em;
+    width: 1.3em;
+    margin: 0px 6px;
+    vertical-align: sub;
+}
+
+#weather .temp {
+    font-family: 'Alata', sans-serif;
+    font-size: 2.2em;
+}
+
+#weather .icon {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#weather .location::after {
+    content: "·";
+    margin: 0px 10px;
 }
 
 .ADFL-update::after {
@@ -97,4 +131,5 @@ body {
 .dep-time.past {
     color: white;
     background-color: orangered;
+}
 }
